@@ -214,3 +214,31 @@
     background: linear-gradient(45deg, white, #f05b28);
     box-shadow: 0 5px 10px rgb(52 183 157 / 20%);
 }
+.HoverEffect {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+
+.HoverEffect:hover img  {
+    transform: scale(1.2);
+    opacity: 0.5;
+    transition: all 5s;
+    color: #34B79D;
+    cursor: pointer;
+    
+}
+
+.READMOREBUTTON {
+    transition: transform 1.6s;
+    background-color: #F0EEED;
+    cursor: pointer;
+}
+
+.READMOREBUTTON:hover {
+    color: #34B79D;
+    background-color: black;
+}
+
+
+

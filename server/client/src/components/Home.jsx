@@ -1,5 +1,5 @@
 import React from 'react'
-import Featuredproducts from './Featuredproducts'
+//import Featuredproducts from './Featuredproducts'
 // import { NavLink } from 'react-router-dom'
 import './common/Common.css'
 
@@ -84,7 +84,7 @@ const Home = () => {
                     <div className="container p-5">
                         <h2 className='text-center ' style={{ paddingTop: "40px", }}>Rent By Categories</h2>
                         <div className="row p-5">
-                            <div className="col-3 ">
+                            <div className="col-lg-3 ">
                             <div className='position-relative  READMOREBUTTON '>
                                     <img className='w-100 ' src={require("../Images/600-400BOX.png")} alt="" srcSet="" />
                                     <div className='position-absolute top-100 start-50 translate-middle'>
@@ -93,7 +93,7 @@ const Home = () => {
                                 </div>
                             </div>
 
-                            <div className="col-3">
+                            <div className="col-lg-3">
                             <div className='position-relative  READMOREBUTTON '>
                                     <img className='w-100 ' src={require("../Images/2.png")} alt="" srcSet="" />
                                     <div className='position-absolute top-100 start-50 translate-middle'>
@@ -102,7 +102,7 @@ const Home = () => {
                                 </div>
                             </div>
 
-                            <div className="col-3">
+                            <div className="col-lg-3">
                             <div className='position-relative   READMOREBUTTON'>
                                     <img className='w-100 ' src={require("../Images/3.png")} alt="" srcSet="" />
                                     <div className='position-absolute top-100 start-50 translate-middle'>
@@ -111,7 +111,7 @@ const Home = () => {
                                 </div>
                             </div>
 
-                            <div className="col-3">
+                            <div className="col-lg-3">
                                 <div className='position-relative READMOREBUTTON  '>
                                     <img className='w-100 ' src={require("../Images/4.png")} alt="" srcSet="" />
                                     <div className='position-absolute top-100 start-50 translate-middle'>

@@ -277,26 +277,26 @@ const About = () => {
                       <h3 className='mb-lg-4' style={{ fontSize: "16px", color: "#4A4A4A" }}><b>SEND ME A MESSAGE</b></h3>
 
                       <div class="mb-3 mt-2">
-                        <input type="text" class="form-control" style={{borderRadius:"0px", height:"50px",width:"85%"}} placeholder='Name*' id="exampleInputEmail1" aria-describedby="emailHelp" />
+                        <input type="text" class="form-control" style={{ borderRadius: "0px", height: "50px", width: "85%" }} placeholder='Name*' id="exampleInputEmail1" aria-describedby="emailHelp" />
                       </div>
 
                       <div class="mb-3 mt-lg-4">
-                        <input type="email" class="form-control" style={{borderRadius:"0px", height:"50px",width:"85%"}} placeholder='Email*' id="exampleInputPassword1" />
+                        <input type="email" class="form-control" style={{ borderRadius: "0px", height: "50px", width: "85%" }} placeholder='Email*' id="exampleInputPassword1" />
                       </div>
 
                       <div class="mb-3 mt-lg-4">
-                        <input type="number" class="form-control" style={{borderRadius:"0px", height:"50px",width:"85%"}} placeholder='Contact No.*' id="exampleInputPassword1" />
+                        <input type="number" class="form-control" style={{ borderRadius: "0px", height: "50px", width: "85%" }} placeholder='Contact No.*' id="exampleInputPassword1" />
                       </div>
 
                       <div class="mb-3 mt-lg-4">
-                        <input type="text" class="form-control" style={{borderRadius:"0px", height:"50px",width:"85%"}}  placeholder='Subject*' id="exampleInputPassword1" />
+                        <input type="text" class="form-control" style={{ borderRadius: "0px", height: "50px", width: "85%" }} placeholder='Subject*' id="exampleInputPassword1" />
                       </div>
 
                       <div class="mb-3 mt-lg-4">
-                        <textarea class="form-control" style={{borderRadius:"0px", height:"70px",width:"85%"}} placeholder='Message*' id="exampleFormControlTextarea1"></textarea>
+                        <textarea class="form-control" style={{ borderRadius: "0px", height: "70px", width: "85%" }} placeholder='Message*' id="exampleFormControlTextarea1"></textarea>
                       </div>
 
-                      <button type="submit" class="btn p-2 mt-lg-2" style={{border:"2px solid black",borderRadius:"50px"}}><b className='p-lg-4'>Submit</b></button>
+                      <button type="submit" class="btn p-2 mt-lg-2" style={{ border: "2px solid black", borderRadius: "50px" }}><b className='p-lg-4'>Submit</b></button>
                     </form>
                   </div>
                 </div>

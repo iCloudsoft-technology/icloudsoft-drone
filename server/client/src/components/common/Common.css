@@ -258,6 +258,8 @@
     height: 100vh;
 }
 
+
+
 .Office_Team_bgImg {
     background-image: url(../../Images/Office_team.png);
     background-attachment: fixed;
@@ -276,11 +278,7 @@
     background-image:linear-gradient(180deg,rgba(0,0,0,.47) 50%,#000 100%);
  
 }
-/* 
-.xyz{
-    background-image:linear-gradient(180deg,rgba(0,0,0,.47) 100%,#000 100%);
- 
-} */
+
 
 
 
@@ -292,5 +290,39 @@
 }
 
 
+
+
+.FOOTERLINK {
+    color: #8e8e8e;
+}
+
+.FOOTERLINK:hover {
+    color: white;
+}
+
+
+.RMIbtn{
+    color: #59abf4;
+    
+}
+
+.RMIbtn:hover{
+    color: #446084;
+}
+
+
+.borderRMI{
+    
+    border-bottom: 2px solid #446084;
+    width: 22%;
+    cursor: pointer;
+}
+
+.borderRMI:hover{
+    border-bottom: 2px solid #446084;
+    width: 24%;
+    transform: scale(1.9);
+   cursor: pointer;
+}
 
 

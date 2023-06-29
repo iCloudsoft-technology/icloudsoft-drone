@@ -1,9 +1,13 @@
 import React from 'react'
-import './common/Common.css'
 
 const About = () => {
   return (
     <>
+
+      <section>
+
+      </section>
+
       {/* <section>
        <div  className='AboutUS_bgImg'>
         
@@ -11,7 +15,14 @@ const About = () => {
         
       </section> */}
 
-      <section className='AboutUS_bgImg' style={{ height: "100vh" }}>
+      {/* <section>
+        <video autoPlay loop muted className='w-100  ' style={{ objectFit: "fill" ,height:"90vh" }}  >
+          <source src={require("../Images/s5.mp4")} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section> */}
+
+      {/* <section className='AboutUS_bgImg' style={{ height: "100vh" }}>
         <div className=' sd' >
           <div className="pt-lg-5 p-lg-5">
             <div className="row text-white p-3 d-flex justify-content-center align-items-center" style={{ height: "100%" }}>
@@ -48,22 +59,46 @@ const About = () => {
             </div>
           </div>
         </div>
+      </section> */}
+
+
+
+
+      <section>
+        <div className='container-fluid position-relative ' style={{ backgroundImage: `url(${require("../Images/aboutBanner.png")})`, backgroundAttachment: "local", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: 'center,center', height: "80vh" }}>
+          <div className="container position-absolute  text-dark" style={{ bottom: "10%", left: "7%" }}>
+            <div className="row " >
+              <h2 className='  SolutionDropDown' >Company Profile</h2>
+              <p className='fs-5 fontFamilyHeader1'>At iCloud Drone, we are passionate about pushing the boundaries of aerial technology and unlocking the full potential of drones. In addition to our cutting-edge drones, we offer a comprehensive range of services tailored to our clients' specific needs. We believe in going beyond the sale of a product and strive to establish long-term partnerships with our clients, supporting them throughout their drone journey.</p>
+            </div>
+          </div>
+
+        </div>
       </section>
 
-      <section className='' style={{ backgroundColor: "#000" }}>
+
+
+      <section className='' >
         <div className="container-fluid ">
-          <div className="container p-lg-5">
-            <div className="row FontFamily g-4  text-white">
-              <div className="col-lg-5">
-                <div className='mt-5 p-lg-4'>
-                  <h6 className='p-2'>About Us</h6>
-                  <h3 className='p-2 ' style={{ fontSize: "34px" }}>We make sure that safety and quality in industrial operations is enhanced.</h3>
-                  <p className='p-2' style={{ marginBottom: "2rem", fontSize: "18px" }}>Modern Non-Destructive Testing Services, Rope Access Enabled Services (Industrial Services and NDT), UAV Enabled Inspections, Dimensional Inspections, Engineering Consultancy, and Training Programs are the main emphasis of the Technology Group DroneMaster. Everything from quality assurance through quality control is available to our clients. Our Team is dedicated to provide the highest calibre services while also abiding by the most widely acknowledged safety regulations. With a combined experience of 5+ years, our team of technicians, engineers, and inspectors has helped us become one of the global leaders in the mechanical integrity and non-destructive testing sectors. In order to surpass our clients’ expectations as we expand, we will continue to invest in developing our technology and services. We are always moving.</p>
+          <div className="container p-lg-4">
+            <div className="row FontFamily g-4 p-3 text-dark">
+
+              <div className="col-lg-6">
+                <div className=' mb-5'>
+                  <h3 className=' fontFamilyHeader1 ' style={{ fontSize: "34px" }}>Mission</h3>
+                  <p className=' fontFamilyHeader' style={{  fontWeight:"inherit",fontSize: "20px" }}>our mission, we strive to make drones accessible, reliable, and transformative for businesses and individuals alike. We are dedicated to empowering our customers, driving innovation, and positively impacting the industries we serve.</p>
                 </div>
+
+                <div className=' '>
+                  <h3 className=' fontFamilyHeader1' style={{ fontSize: "34px" }}>Vision</h3>
+                  <p className=' fontFamilyHeader' style={{ fontWeight:"inherit",fontSize: "20px" }}>our vision, we aim to empower businesses, improve efficiency, and drive positive change in various industries. We are dedicated to creating a future where drones are an integral part of everyday life, enabling new perspectives, driving innovation, and transforming the world around us.</p>
+                </div>
+
+
               </div>
 
 
-              <div className="col-lg-7 ">
+              <div className="col-lg-6 ">
                 <div className=''>
                   <img className='w-100' src={require("../Images/Dm.png")} alt="" srcSet="" />
                 </div>
@@ -77,14 +112,23 @@ const About = () => {
         <div className="container-fluid" style={{ backgroundColor: "#F5F5F5" }}>
           <div className="container p-lg-5">
             <div className="row FontFamily1">
+              <h3 className='p-2 text-center  fontFamilyHeader1' style={{ fontSize: "40px" }}>Why choose us </h3>
+              <p className='p-2 fontFamilyHeader1' style={{ marginBottom: "2rem", fontSize: "22px" }}>When you choose us, you are choosing a trusted partner that is dedicated to your success. We are committed to providing the best-in-class drone solutions, personalized support, and industry expertise to help you unlock the full potential of aerial technology and achieve your business objectives.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* <div className="container-fluid" style={{ backgroundColor: "#F5F5F5" }}>
+          <div className="container p-lg-5">
+            <div className="row FontFamily1">
               <h6 className='fw-bold'>Why Choose Us</h6>
               <h1 className='FontFamily1 mt-lg-4' style={{ fontSize: "35px" }}><b>By putting highly qualified, licenced, and trained employees under experienced leadership, we want to succeed. Our primary goal is to adapt global services to local requirements.</b></h1>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
 
-      <section>
+      {/* <section>
         <div className="container-fluid" style={{ backgroundColor: "#F5F5F5" }}>
           <div className="container p-lg-5">
             <div className="row FontFamily">
@@ -116,20 +160,20 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className='Office_Team_bgImg' >
+      <section className='Office_Team_bgImg ' >
         <div className='abc'>
           <div className="container-fluid ">
-            <div className="container pt-lg-5  text-white">
+            <div className="container pt-lg-5 pb-5 text-white">
               <div className='mt-lg-5 pt-lg-5'>
                 <div className='mt-lg-5 pt-lg-5'>
-                  <h6 className='' style={{ fontSize: "25px" }}>We constantly strive to deliver outstanding service, establish long-lasting relationships.</h6>
-                  <h5 className='mt-3' style={{ fontSize: "35px", lineHeight: "1.3em" }}>Our strategy for building our resources makes plain the claims of our commitment. We take precautions at the most basic level while assembling any team and carrying out any work.</h5>
+                  <h6 className=' fontFamilyHeader1' style={{ fontSize: "25px" }}>We constantly strive to deliver outstanding service, establish long-lasting relationships.</h6>
+                  <h5 className='mt-3 fontFamilyHeader1' style={{ fontSize: "35px", lineHeight: "1.3em" }}>Our strategy for building our resources makes plain the claims of our commitment. We take precautions at the most basic level while assembling any team and carrying out any work.</h5>
                 </div>
               </div>
-              <div className="row  p-3">
-                <div className="col-3 ">
+              {/* <div className="row d-flex justify-content-between  pt-4 pb-5"> */}
+                {/* <div className="col-3 ">
                   <div className='bg-light text-dark  ' style={{ height: "340px", borderRadius: '10px 10px 10px 10px' }}>
                     <div className='text-center' >
                       <img className='w-50 mt-lg-4' style={{ borderRadius: '10px 10px 10px 10px' }} src={require("../Images/1.png")} alt="" srcSet="" />
@@ -145,9 +189,9 @@ const About = () => {
                     </div>
                   </div>
 
-                </div>
+                </div> */}
 
-                <div className="col-3 ">
+                {/* <div className="col-3 ">
                   <div className='bg-light text-dark  ' style={{ height: "340px", borderRadius: '10px 10px 10px 10px' }}>
                     <div className='text-center' >
                       <img className='w-50 mt-lg-4' style={{ borderRadius: '10px 10px 10px 10px' }} src={require("../Images/DepakChpade.png")} alt="" srcSet="" />
@@ -163,9 +207,9 @@ const About = () => {
                     </div>
                   </div>
 
-                </div>
+                </div> */}
 
-                <div className="col-3 ">
+                {/* <div className="col-3 ">
                   <div className='bg-light text-dark  ' style={{ height: "340px", borderRadius: '10px 10px 10px 10px' }}>
                     <div className='text-center' >
                       <img className='w-50 mt-lg-4' style={{ borderRadius: '10px 10px 10px 10px' }} src={require("../Images/sg.png")} alt="" srcSet="" />
@@ -181,9 +225,9 @@ const About = () => {
                     </div>
                   </div>
 
-                </div>
+                </div> */}
 
-                <div className="col-3 ">
+                {/* <div className="col-3 ">
                   <div className='bg-light text-dark  ' style={{ height: "340px", borderRadius: '10px 10px 10px 10px' }}>
                     <div className='text-center' >
                       <img className='w-50 mt-lg-4' style={{ borderRadius: '10px 10px 10px 10px' }} src={require("../Images/rk.png")} alt="" srcSet="" />
@@ -199,7 +243,7 @@ const About = () => {
                     </div>
                   </div>
 
-                </div>
+                </div> */}
               </div>
 
 
@@ -207,8 +251,8 @@ const About = () => {
 
             </div>
           </div>
-        </div>
-        <section className='pt-lg-5' style={{ backgroundColor: "#000" }}>
+        {/* </div> */}
+        {/* <section className='pt-lg-5' style={{ backgroundColor: "#000" }}>
           <div className='container-fluid pt-lg-5'>
             <div className="container pt-lg-5 pb-lg-5 text-white">
               <div className="row ">
@@ -249,10 +293,10 @@ const About = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </section>
 
-      <section>
+      {/* <section>
         <div className="container-fluid" style={{ backgroundColor: "#F5F5F5" }}>
           <div className="container ">
             <div className="row  " style={{ borderBottom: "1px solid #4A4A4A" }}>
@@ -304,11 +348,10 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
     </>
   )
-
 }
 
 export default About

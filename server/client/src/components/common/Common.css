@@ -78,7 +78,7 @@
 }
 
 .border-c1 {
-    border-bottom: 1px solid #34b79d;
+    border-bottom: 1px solid black;
 }
 
 .border-c2 {
@@ -213,20 +213,23 @@
     width: 30px;
     background: linear-gradient(45deg, white, #f05b28);
     box-shadow: 0 5px 10px rgb(52 183 157 / 20%);
+
+
 }
+
 .HoverEffect {
     overflow: hidden;
     background-color: rgba(0, 0, 0, 1);
 }
 
 
-.HoverEffect:hover img  {
+.HoverEffect:hover img {
     transform: scale(1.2);
     opacity: 0.5;
     transition: all 5s;
     color: #34B79D;
     cursor: pointer;
-    
+
 }
 
 .READMOREBUTTON {
@@ -241,7 +244,7 @@
 }
 
 
-
+/* 
 .AboutUS_bgImg {
     background-image: url(../../Images/AboutUsBackgoundImg.png);
     background-attachment: fixed;
@@ -251,10 +254,11 @@
     background-color: transparent;
     opacity: 1;
     height: 100vh;
-    border-bottom: 2px solid white;  
-}
-.sd{
-    background-image:linear-gradient(180deg,rgba(0,0,0,.47) 50%,#000 100%);
+    border-bottom: 2px solid white;
+} */
+
+.sd {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .47) 50%, #000 100%);
     height: 100vh;
 }
 
@@ -268,24 +272,28 @@
     background-size: cover;
     background-color: transparent;
     opacity: 1;
-    border-bottom: 2px solid white;  
-}
-.sd{
-    background-image:linear-gradient(180deg,rgba(0,0,0,.47) 100%,#000 100%);
- 
-}
-.abc{
-    background-image:linear-gradient(180deg,rgba(0,0,0,.47) 50%,#000 100%);
- 
+    border-bottom: 2px solid white;
 }
 
+.sd {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .47) 100%, #000 100%);
+
+}
+
+.abc {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .47) 50%, #000 100%);
+
+}
 
 
 
-.FontFamily{
+
+
+.FontFamily {
     font-family: 'Alata', sans-serif;
 }
-.FontFamily1{
+
+.FontFamily1 {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -301,28 +309,129 @@
 }
 
 
-.RMIbtn{
+.RMIbtn {
     color: #59abf4;
-    
+
 }
 
-.RMIbtn:hover{
+.RMIbtn:hover {
     color: #446084;
 }
 
 
-.borderRMI{
-    
+.borderRMI {
+
     border-bottom: 2px solid #446084;
     width: 22%;
     cursor: pointer;
 }
 
-.borderRMI:hover{
+.borderRMI:hover {
     border-bottom: 2px solid #446084;
     width: 24%;
     transform: scale(1.9);
-   cursor: pointer;
+    cursor: pointer;
+}
+
+.HoverEffect:hover img {
+    transform: scale(1.8);
+    cursor: pointer;
+}
+
+.HoverEffect {
+    overflow: hidden;
+    transition: 5s;
 }
 
 
+
+
+.BUYBUTTON {
+    transition: transform 1.6s;
+    background-color: #DC3545;
+    cursor: pointer;
+}
+
+.BUYBUTTON:hover {
+    background-color: black;
+}
+
+
+.LOGINBUTTON {
+    transition: transform 1.6s;
+    overflow: hidden;
+    background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+    border: 1px solid gray;
+    border-radius: 1rem;
+
+}
+
+.LOGINBUTTON:hover {
+
+    color: black;
+    transform: scale(1.1);
+    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+}
+
+.SIGNUPBUTTON {
+    transition: transform 1.6s;
+    overflow: hidden;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+}
+
+.SIGNUPBUTTON:hover {
+    color: black;
+    transform: scale(1.1);
+    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+}
+
+.fontFamilyHeader {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+}
+
+.fontFamilyHeader1 {
+    font-family: 'Kanit', sans-serif;
+}
+
+.SolutionDropDownFontFamily {
+    font-family: 'Kanit', sans-serif;
+}
+
+.SolutionDropDownFontFamily1 {
+    font-family: 'Kanit', sans-serif;
+    line-height: 40px;
+}
+
+.SolutionDropDownFontFamily2 {
+    font-family: 'Kanit', sans-serif;
+    line-height: 23px;
+}
+
+.SolutionDropDownFontFamily3 {
+    font-family: 'Kanit', sans-serif;
+    line-height: 35px;
+}
+
+.SolutionDropDown {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.h1FontFamily {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+}
+
+.h1FontFamily1 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.h1FontFamilyLineHeight {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+    line-height: 50px;
+
+}

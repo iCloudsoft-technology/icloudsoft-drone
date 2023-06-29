@@ -20,7 +20,7 @@ const Product = () => {
     if (isLoading) {
         return (
             <>
-                <Loading />
+                {/* <Loading /> */}
             </>
         )
     }
@@ -29,7 +29,7 @@ const Product = () => {
         <>
             <section >
                 <div className='container-fluid bg-c1 text-white'>
-                    <div className="row">
+                    <div className="row ">
                         <div className="d-flex  ">
                             <button className=' bg-c1 text-white border-0 ' > Home </button>
                             {
@@ -49,10 +49,10 @@ const Product = () => {
             <section >
                 <section  >
                     <div className="container-fluid ">
-                        <div className="row pt-2 ">
+                        <div className="row  pt-5 pb-5 " >
                             <div className="col-lg-2">
                             </div>
-                            <div className="col-lg-10">
+                            <div className="col-lg-10 " >
                                 <div className="container">
                                     <div className="row  g-3">
                                         {
@@ -60,20 +60,20 @@ const Product = () => {
                                                 products.map((row) => {
                                                     return (
                                                         <>
-                                                            <div className="col-lg-4">
-                                                                <div className="card border-c2 " style={{ height: "26rem" }} >
-                                                                    <img src={row.images[0].url} className="card-img-top border-c1" alt="..." style={{ overflow: "hidden" }} />
-                                                                    <div className="card-body  text-center  bg-c1"   >
-                                                                        <h5 className="card-title">{row.name}</h5>
-                                                                        <p className="card-text">{row.price}</p>
+                                                            <div className="col-lg-4 ">
+                                                                <div className="card shadow-lg" style={{ height: "26rem" ,backgroundColor:"#34B79D",border:'none'}} >
+                                                                    <img src={row.images[0].url} className="card-img-top " alt="..." style={{ overflow: "hidden" }} />
+                                                                    <div className="card-body  text-center "   >
+                                                                        <h5 className="card-title fs-4 fw-bold">{row.name}</h5>
+                                                                        <p className="card-text fw-bold">{row.price}</p>
 
                                                                         <div className='container-fluid bg ' >
-                                                                            <div className="row g-1 text-center d-flex justify-content-between ">
+                                                                            <div className="row g-1 text-center d-flex justify-content-center ">
 
 
-                                                                                <div className='col-5 rounded  p-2 ' style={{ backgroundColor: "#ff9f00" }}>
+                                                                                {/* <div className='col-5 rounded  p-2  w-75  BUYBUTTON' >
                                                                                     <NavLink className="text-decoration-none  text-white" to={`/singleproduct/${row._id}`} > BUY </NavLink>
-                                                                                </div>
+                                                                                </div> */}
 
 
                                                                                 <div className='col-5 rounded  p-2' style={{ backgroundColor: "#fb641b" }}>

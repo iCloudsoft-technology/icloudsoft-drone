@@ -1,9 +1,20 @@
 import React from 'react'
-import "./Common.css"
+import "./Loading.css";
+// import "./Common.css"
 const Loading = () => {
-    return (
-        <>
-            <div className="loader-inner ">
+  return (
+    <>
+
+      <div className='loader '>
+        <span >abc</span>
+        <span >bcd</span>
+        <span > def</span>
+        <span >fgh</span>
+      </div>
+
+
+
+      {/* <div className="loader-inner ">
         <div class="wrapper">
           <span className='spanball'></span>
           <i className='fs-4'>Loading</i> &nbsp;
@@ -11,8 +22,8 @@ const Loading = () => {
           <i class="spinner-grow spinner-grow-sm" role="status"></i> &nbsp;
           <i class="spinner-grow spinner-grow-sm" role="status"></i> &nbsp;
         </div>
-      </div>
-      
+      </div> */}
+
       {/* <section className='loader-background text-center '>
 
         <div className='loader-inner p-5'>
@@ -27,8 +38,8 @@ const Loading = () => {
 
         </div>
       </section> */}
-        </>
-    )
+    </>
+  )
 }
 
 export default Loading

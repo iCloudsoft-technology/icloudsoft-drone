@@ -11,9 +11,8 @@ import About from './About'
 import Register from './user/Register'
 import Checkout from './Checkout'
 import Login from './user/Login'
-import Government from './industriespages/Government'
-import Agriculture from './industriespages/Agriculture'
-import Slider from './Extra/Slider'
+
+import Industries from './industriespages/Industries'
 
 
 const Routing = () => {
@@ -28,41 +27,20 @@ const Routing = () => {
                         <Route to path="*" element={<Home />} />
                         <Route to path="/about" element={<About />} />
                         <Route to path="/products" element={<Product />} />
-
-
                         <Route to path="/register" element={<Register />} />
                         <Route to path="/login" element={<Login />} />
-
-
-
-
-
                         <Route to path="/contact" element={<Contact />} />
                         <Route to path="/singleproduct/:id" element={<SingleProduct />} />
                         <Route to path="/cart" element={<Cart />} />
-
                         <Route to path='/checkout' element={<Checkout />} />
-                        
-                        <Route to path='/industries/goverment' element={<Government />} />
-                        <Route to path='/industries/agriculture' element={<Agriculture />} />
 
-                        
-                        
-                        
-
-
-
-
-
-
-
+                        <Route to path='/industries' element={<Industries />} />
 
                     </Routes>
 
                 </main>
                 <footer>
                     <Footer />
-
                 </footer>
 
             </React.Fragment>

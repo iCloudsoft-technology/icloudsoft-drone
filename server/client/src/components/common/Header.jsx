@@ -47,13 +47,13 @@ const Header = () => {
                             </li>
 
                             <li className="nav-item dropdown">
-                                <NavLink className="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <NavLink to='/industries' className="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     INDUSTRIES
                                 </NavLink>
                                 <div className="dropdown-menu " aria-labelledby="navbarDropdown">
-                                    <NavLink className="dropdown-item " to="/">Agriculture</NavLink>
-                                    <NavLink className="dropdown-item" to="/">Government</NavLink>
-                                    <NavLink className="dropdown-item" to="/">Infrastructure</NavLink>
+                                    <NavLink className="dropdown-item " to="/industries/agriculture">Agriculture</NavLink>
+                                    <NavLink className="dropdown-item" to="/industries/goverment">Government</NavLink>
+                                    <NavLink className="dropdown-item" to="/industries/">Infrastructure</NavLink>
                                     <NavLink className="dropdown-item" to="/">Mining</NavLink>
                                     <NavLink className="dropdown-item" to="/">Oil And Gas</NavLink>
                                     <NavLink className="dropdown-item" to="/">Real Estate</NavLink>

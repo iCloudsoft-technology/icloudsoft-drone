@@ -11,6 +11,10 @@ import About from './About'
 import Register from './user/Register'
 import Checkout from './Checkout'
 import Login from './user/Login'
+import Government from './industriespages/Government'
+import Agriculture from './industriespages/Agriculture'
+import Slider from './Extra/Slider'
+
 
 const Routing = () => {
     return (
@@ -38,6 +42,19 @@ const Routing = () => {
                         <Route to path="/cart" element={<Cart />} />
 
                         <Route to path='/checkout' element={<Checkout />} />
+                        
+                        <Route to path='/industries/goverment' element={<Government />} />
+                        <Route to path='/industries/agriculture' element={<Agriculture />} />
+
+                        
+                        
+                        
+
+
+
+
+
+
 
 
                     </Routes>

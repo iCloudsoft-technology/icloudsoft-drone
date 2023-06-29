@@ -214,3 +214,115 @@
     background: linear-gradient(45deg, white, #f05b28);
     box-shadow: 0 5px 10px rgb(52 183 157 / 20%);
 }
+.HoverEffect {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+
+.HoverEffect:hover img  {
+    transform: scale(1.2);
+    opacity: 0.5;
+    transition: all 5s;
+    color: #34B79D;
+    cursor: pointer;
+    
+}
+
+.READMOREBUTTON {
+    transition: transform 1.6s;
+    background-color: #F0EEED;
+    cursor: pointer;
+}
+
+.READMOREBUTTON:hover {
+    color: #34B79D;
+    background-color: black;
+}
+
+
+
+.AboutUS_bgImg {
+    background-image: url(../../Images/AboutUsBackgoundImg.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    background-color: transparent;
+    opacity: 1;
+    height: 100vh;
+    border-bottom: 2px solid white;  
+}
+.sd{
+    background-image:linear-gradient(180deg,rgba(0,0,0,.47) 50%,#000 100%);
+    height: 100vh;
+}
+
+
+
+.Office_Team_bgImg {
+    background-image: url(../../Images/Office_team.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    background-color: transparent;
+    opacity: 1;
+    border-bottom: 2px solid white;  
+}
+.sd{
+    background-image:linear-gradient(180deg,rgba(0,0,0,.47) 100%,#000 100%);
+ 
+}
+.abc{
+    background-image:linear-gradient(180deg,rgba(0,0,0,.47) 50%,#000 100%);
+ 
+}
+
+
+
+
+.FontFamily{
+    font-family: 'Alata', sans-serif;
+}
+.FontFamily1{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+.FOOTERLINK {
+    color: #8e8e8e;
+}
+
+.FOOTERLINK:hover {
+    color: white;
+}
+
+
+.RMIbtn{
+    color: #59abf4;
+    
+}
+
+.RMIbtn:hover{
+    color: #446084;
+}
+
+
+.borderRMI{
+    
+    border-bottom: 2px solid #446084;
+    width: 22%;
+    cursor: pointer;
+}
+
+.borderRMI:hover{
+    border-bottom: 2px solid #446084;
+    width: 24%;
+    transform: scale(1.9);
+   cursor: pointer;
+}
+
+

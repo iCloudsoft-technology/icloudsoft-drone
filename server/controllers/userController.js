@@ -8,29 +8,29 @@ const cloudinary = require("cloudinary");
 
 // Register a User
 exports.registerUser = catchAsyncErrors(async(req, res, next) => {
-    console.log("hi")
+    // console.log("hi")
 
-    const file = req.files.avatar
-        // console.log(req.files, req.body)
-    const myCloud = await cloudinary.v2.uploader.upload(req.files.avatar.tempFilePath, {
-        folder: "avatars",
-        width: 150,
-        crop: "scale",
-    });
+    // const file = req.files.avatar
+    // console.log(req.files, req.body)
+    // const myCloud = await cloudinary.v2.uploader.upload(req.files.avatar.tempFilePath, {
+    //     folder: "avatars",
+    //     width: 150,
+    //     crop: "scale",
+    // });
     // console.log(req.files.avatar);
-    console.log(myCloud)
+    // console.log(myCloud)
 
-    const { name, email, password, number } = req.body;
+    const { name, email, password, } = req.body;
 
     const user = await User.create({
         name,
         email,
         password,
-        number,
-        avatar: {
-            public_id: myCloud.public_id,
-            url: myCloud.url,
-        },
+        // number,
+        // avatar: {
+        //     public_id: myCloud.public_id,
+        //     url: myCloud.url,
+        // },
     });
     console.log(user)
 

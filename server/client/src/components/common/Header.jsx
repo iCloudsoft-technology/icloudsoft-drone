@@ -1,8 +1,48 @@
 import React from 'react'
 import "./Common.css"
-import { NavLink } from 'react-router-dom'
+import axios from "axios"
+import { NavLink, useNavigate } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux';
+import { authActions } from '../../store/index';
 
 const Header = () => {
+    const navigator = useNavigate();
+
+    const isLoggedIn = useSelector(state => state.isLoggedIn);
+    const dispatch = useDispatch();
+
+
+    // useEffect(() => {
+    const sendLogout = async (url) => {
+        await axios.post(url)
+            .then(res => {
+                console.log(res)
+                alert("logout success")
+                navigator("/")
+            })
+            .catch(error => {
+                console.log(error)
+            })
+    };
+    const handleLogout = () => {
+        // if (isLoggedIn) {
+        const API = "http://localhost:3535/user/logout"
+        sendLogout(API)
+            .then(() => { dispatch(authActions.logout()) })
+
+            .catch(err => {
+                console.log(err.response.data.message)
+
+            })
+        // }
+        // else {
+        //     return
+        // }
+
+    }
+
+    // })
+
     return (
         <>
             <section className='font   border-c1' >
@@ -11,7 +51,7 @@ const Header = () => {
                         <div className='col d-none d-lg-block text-start '>
                             <div className="row">
                                 <div className="col-6">
-                                    <NavLink to="tel:9527468898" className="text-decoration-none navHead-link " > <i className="fa-solid fa-phone"></i> <b>+91 9527468898</b> </NavLink>
+                                    <NavLink to="tel: 9527468898" className="text-decoration-none navHead-link " > <i className="fa-solid fa-phone"></i> <b>+91 9527468898</b> </NavLink>
                                 </div>
                             </div>
                         </div>
@@ -19,9 +59,23 @@ const Header = () => {
 
                         <div className='col '>
                             <div className="row w-100 d-flex justify-content-around">
-                                <div className='col-3 '><NavLink className="text-decoration-none navHead-link" to="/login" >LOG IN</NavLink></div>
-                                <div className='col-3'><NavLink className="text-decoration-none navHead-link" to="/register">REGISTER</NavLink></div>
-                                <div className='col-3 '><NavLink className="text-decoration-none navHead-link" to="/" >ACCOUNT</NavLink></div>
+                                {
+                                    !isLoggedIn &&
+                                    <>
+                                        <div className='col-3 '><NavLink className="text-decoration-none navHead-link" to="/login" >LOG IN</NavLink></div>
+                                        <div className='col-3'><NavLink className="text-decoration-none navHead-link" to="/register">REGISTER</NavLink></div>
+                                    </>
+                                }
+                                 <div className='col-3 '><NavLink className="text-decoration-none navHead-link" to="/" >ACCOUNT</NavLink></div>
+                                {
+                                    isLoggedIn &&
+                                    <>
+                                        <div className='col-3'><NavLink className="text-decoration-none navHead-link" onClick={() => { handleLogout()}}>LOGOUT</NavLink></div>
+                                        
+                                    </>
+                                    // isLoggedIn && <div className='col-3 '><NavLink className="text-decoration-none navHead-link" onClick={handleLogout()} >Logout</NavLink></div>
+                                }
+                               
                             </div>
                         </div>
                     </div>
@@ -44,22 +98,6 @@ const Header = () => {
                             <li className="nav-item ">
                                 <NavLink className="nav-link  " to="/products">PRODUCT</NavLink>
                             </li>
-
-
-                            {/* <li className="nav-item dropdown">
-                                <NavLink className="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    INDUSTRIES
-                                </NavLink>
-                                <div className="dropdown-menu " aria-labelledby="navbarDropdown">
-                                    <NavLink className="dropdown-item " to="/">Agriculture</NavLink>
-                                    <NavLink className="dropdown-item" to="/">Government</NavLink>
-                                    <NavLink className="dropdown-item" to="/">Infrastructure</NavLink>
-                                    <NavLink className="dropdown-item" to="/">Mining</NavLink>
-                                    <NavLink className="dropdown-item" to="/">Oil And Gas</NavLink>
-                                    <NavLink className="dropdown-item" to="/">Real Estate</NavLink>
-                                    <NavLink className="dropdown-item" to="/">Transportation</NavLink>
-                                    <NavLink className="dropdown-item" to="/">Renewable Energy</NavLink>
-                                </div> */}
                             <li className="nav-item ">
                                 <NavLink className="nav-link  " to="/industries">INDUSTRIES</NavLink>
                             </li>

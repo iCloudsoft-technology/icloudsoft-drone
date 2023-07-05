@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import axios from "axios"
 import { NavLink, useNavigate } from 'react-router-dom'
 import './Common.css'
@@ -139,14 +139,16 @@ const Header = () => {
     }
 
     const handleLogout = () => {
-        const API = "http://localhost:8858/user/logout"
-        sendLogout(API)
-            // .then(() => { dispatch(authActions.logout()) })
+        const API = "http://localhost:3535/user/logout"
+        // useEffect(() => {
+            sendLogout(API)
+                .then(() => { dispatch(authActions.logout()) })
 
-            .catch(err => {
-                console.log(err.response.data.message)
+                .catch(err => {
+                    console.log(err.response.data.message)
 
-            })
+                })
+        // })
 
     }
     return (
@@ -158,7 +160,7 @@ const Header = () => {
             <nav className="navbar navbar-expand-lg  bg-body   p-2" >
 
                 {/* logo start*/}
-                <NavLink  to="/"><img className='ps-3 pe-3' style={{ height: "10.5rem" }} src={require("../Images/logo.png")} alt="" /></NavLink>
+                <NavLink to="/"><img className='ps-3 pe-3' style={{ height: "10.5rem" }} src={require("../Images/logo.png")} alt="" /></NavLink>
                 {/* logo end */}
 
                 {/* toggler button start */}
@@ -190,7 +192,7 @@ const Header = () => {
                                             <div className='position-absolute bottom-0 start-50 translate-middle  text-warning  rounded-circle ' >{total_item}</div>
                                         </div>
                                     </div> */}
-                                     <i className="fa-solid fa-cart-shopping fs-4"></i> <span>{total_item}</span>
+                                    <i className="fa-solid fa-cart-shopping fs-4"></i> <span>{total_item}</span>
 
                                 </div>
 
@@ -250,16 +252,12 @@ const Header = () => {
                                         <div className="container " >
                                             <div className="row justify-content-center">
                                                 <div className="mb-3 ">
-
                                                     <label htmlFor="exampleInputEmail2" className="form-label ">Email address</label>
                                                     <input type="email" className="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" onChange={e => setEmail(e.target.value)} value={email} />
-
-
                                                 </div>
                                                 <div className="mb-3">
                                                     <label htmlFor="exampleInputPassword2" className="form-label">Password</label>
                                                     <input type="password2" className="form-control" id="exampleInputPassword2" onChange={e => setPassword(e.target.value)} value={password} />
-
                                                 </div>
                                                 {loginError && <div className='text-danger'>{loginError}</div>}
                                                 <div className="mb-3 text-center">

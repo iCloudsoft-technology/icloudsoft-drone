@@ -10,7 +10,7 @@ const Footer = () => {
     <>
 
       <section>
-        <div className="container-fluid pt-lg-3 " style={{ backgroundColor: "#262626" }}>
+        <div className="container-fluid pt-lg-3 " style={{ backgroundColor: "#011612" }}>
           <div className="p-3 pt-lg-5">
             <div className="row  ">
               <div className="col-lg-3  ">

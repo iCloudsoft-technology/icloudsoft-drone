@@ -23,24 +23,24 @@ const userSchema = new mongoose.Schema({
         minLength: [8, "Password should be greater than 8 characters"],
         select: false,
     },
-    number: {
-        type: String,
-        required: [true, "Please Enter Your Number"],
-        minLength: [10, "no should have minimum 10 digits"],
-        maxLength: [10, "no should have maximum 10 digits"],
-        match: [/\d{10}/, "no should only have digits"],
-        select: false,
-    },
-    avatar: {
-        public_id: {
-            type: String,
-            required: true,
-        },
-        url: {
-            type: String,
-            required: true,
-        },
-    },
+    // number: {
+    //     type: String,
+    //     required: [true, "Please Enter Your Number"],
+    //     minLength: [10, "no should have minimum 10 digits"],
+    //     maxLength: [10, "no should have maximum 10 digits"],
+    //     match: [/\d{10}/, "no should only have digits"],
+    //     select: false,
+    // },
+    // avatar: {
+    //     public_id: {
+    //         type: String,
+    //         required: true,
+    //     },
+    //     url: {
+    //         type: String,
+    //         required: true,
+    //     },
+    // },
     role: {
         type: String,
         default: "user",
